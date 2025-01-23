@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Simple Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="A"> A) Madrid</label>
+                <label><input type="radio" name="q1" value="B"> B) Paris</label>
+                <label><input type="radio" name="q1" value="C"> C) Berlin</label>
+                <label><input type="radio" name="q1" value="D"> D) Rome</label>
+            </div>
+            <div class="question">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <label><input type="radio" name="q2" value="A"> A) Earth</label>
+                <label><input type="radio" name="q2" value="B"> B) Venus</label>
+                <label><input type="radio" name="q2" value="C"> C) Mars</label>
+                <label><input type="radio" name="q2" value="D"> D) Jupiter</label>
+            </div>
+            <div class="question">
+                <p>3. Who wrote "Romeo and Juliet"?</p>
+                <label><input type="radio" name="q3" value="A"> A) Charles Dickens</label>
+                <label><input type="radio" name="q3" value="B"> B) J.K. Rowling</label>
+                <label><input type="radio" name="q3" value="C"> C) William Shakespeare</label>
+                <label><input type="radio" name="q3" value="D"> D) Mark Twain</label>
+            </div>
+            <div class="question">
+                <p>4. What is the largest ocean on Earth?</p>
+                <label><input type="radio" name="q4" value="A"> A) Atlantic Ocean</label>
+                <label><input type="radio" name="q4" value="B"> B) Pacific Ocean</label>
+                <label><input type="radio" name="q4" value="C"> C) Indian Ocean</label>
+                <label><input type="radio" name="q4" value="D"> D) Arctic Ocean</label>
+            </div>
+            <div class="question">
+                <p>5. What is the chemical symbol for water?</p>
+                <label><input type="radio" name="q5" value="A"> A) O2</label>
+                <label><input type="radio" name="q5" value="B"> B) H2O</label>
+                <label><input type="radio" name="q5" value="C"> C) CO2</label>
+                <label><input type="radio" name="q5" value="D"> D) NaCl</label>
+            </div>
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score"></span>/5</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
